@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="15C50" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="vXZ-lx-hvc">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="ufC-wZ-h7g">
+            <objects>
+                <viewController id="vXZ-lx-hvc" customClass="ViewController" customModule="SmileSwift" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="jyV-Pf-zRb"/>
+                        <viewControllerLayoutGuide type="bottom" id="2fi-mo-0CV"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="kh9-bI-dsS">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="cFY-I8-RRa">
+                                <rect key="frame" x="168" y="365" width="182" height="294"/>
+                                <color key="backgroundColor" red="0.79444974660873413" green="0.7933230996131897" blue="0.95048683881759644" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="qf0-gc-v7M">
+                                <rect key="frame" x="20" y="12" width="340" height="340"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JwO-Bv-Hqd">
+                                <rect key="frame" x="20" y="482" width="140" height="60"/>
+                                <color key="backgroundColor" red="0.86642318964004517" green="0.9544716477394104" blue="0.81491833925247192" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <state key="normal" title="album">
+                                    <color key="titleColor" white="0.37" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="album" destination="vXZ-lx-hvc" eventType="touchUpInside" id="1h3-aa-3RT"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NoG-tY-NQF">
+                                <rect key="frame" x="20" y="414" width="140" height="60"/>
+                                <color key="backgroundColor" red="0.94743961095809937" green="0.84727466106414795" blue="0.9584926962852478" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <state key="normal" title="camera">
+                                    <color key="titleColor" white="0.37" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="takePhoto" destination="vXZ-lx-hvc" eventType="touchUpInside" id="cTa-sZ-Ora"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NRg-Oz-x2N">
+                                <rect key="frame" x="20" y="550" width="140" height="60"/>
+                                <color key="backgroundColor" red="0.78128981590270996" green="0.90534991025924683" blue="0.94398903846740723" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <state key="normal" title="judge">
+                                    <color key="titleColor" white="0.37" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="detectFaces" destination="vXZ-lx-hvc" eventType="touchUpInside" id="UEk-Cf-hp5"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                    </view>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
+                    <connections>
+                        <outlet property="outputTextView" destination="cFY-I8-RRa" id="X3j-kS-Mcc"/>
+                        <outlet property="sampleImageView" destination="qf0-gc-v7M" id="ku2-sb-hRK"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="562.5" y="538.5"/>
+        </scene>
+    </scenes>
+</document>
